@@ -114,6 +114,7 @@ const TimeConverter = () => {
         style={{
           display: "flex",
           alignItems: "center",
+          overflowY: "auto",
         }}
       >
         <h1 className="main-heading">Time Converter</h1>
