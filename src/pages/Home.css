@@ -1,0 +1,113 @@
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: white;
+}
+.app-container.dark {
+  background-color: #1e1e1e;
+}
+.home-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 2px 2px 36px 20px rgba(0, 0, 0, 0.2);
+}
+.main-heading {
+  text-align: center;
+}
+.timeHeaderContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.time-searchbar-container {
+}
+
+.time-tools-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.time-tool {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+.suggestions-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  width: 20%;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+.suggestion-item.dark:hover {
+  color: white;
+  background-color: #1e1e1e;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+.search-bar {
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+.search-bar.dark {
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+.home-container {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.home-container.dark {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.home-container.dark .time-searchbar-container input {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+.home-container.dark .suggestions-list {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.timezones-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
